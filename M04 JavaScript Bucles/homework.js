@@ -41,7 +41,7 @@ function conection(status) {
          return "Away"
       default:
          return "Offline"
-   }
+         }
    
 }
 
@@ -56,13 +56,10 @@ function saludo(idioma) {
    switch(idioma) {
       case "aleman":
          return "Guten Tag!"
-         break
       case "mandarin":
          return "Ni Hao!"
-         break
       case "ingles":
          return "Hello!"
-         break
       case "undefined":
       default:
          return "Hola!"
@@ -82,16 +79,13 @@ function colors(color) {
    switch(color) {
       case "blue":
          return "This is " + color;
-         break;
       case "red":
          return "This is " + color;
-         break;
       case "green":
          return "This is " + color;
-         break;
       case "orange":
          return "This is " + color;
-         break;
+
       default:
          return "Color not found"
    }
