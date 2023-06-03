@@ -15,8 +15,7 @@ function crearGato(nombre, edad) {
             } 
    return Gato
    }
-   
-   
+    
 
 
 function nuevoUsuario(nombre, email, password) {
