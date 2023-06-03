@@ -165,7 +165,7 @@ function todosIguales(array) {
    // Si todos los elementos del arreglo son iguales, retornar true.
    // Caso contrario retornar false.
    // Tu código:
-   if (array.every((num)=>array[0]==num)){
+   if (array.every((num)=>num==array[0])){
       return true;
    } else {
       return false;
@@ -199,8 +199,10 @@ function tablaDelSeis() {
    for(i=0;i<11;i++){
       tablaseis[i]=(i*6);
    }
+   
    return tablaseis;
 }
+
 
 function mayorACien(array) {
    // La función recibe un arreglo con enteros entre 0 y 200.
