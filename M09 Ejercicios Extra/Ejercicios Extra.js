@@ -14,6 +14,9 @@ function numberOfCharacters(string) {
    // Las letras deben estar en orden alfabético.
    // [EJEMPLO]: "adsjfdsfsfjsdjfhacabcsbajda" ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 }
    // Tu código:
+   for(var i=0;i<string.length;i++){
+     // var NewObj[i]
+   }
 }
 
 function capToFront(string) {
@@ -29,12 +32,28 @@ function asAmirror(frase) {
    // La diferencia es que cada palabra estará escrita al inverso.
    // [EJEMPLO]: "The Henry Challenge is close!"  ---> "ehT yrneH egnellahC si !esolc"
    // Tu código:
+   var palabras=frase.split(" ")
+   var fraseInv=[];
+   
+   for(var palabra of palabras){
+      var palabraInv=palabra.split("").reverse().join("")//+" "
+       //console.log(palabraInv[i]=parsep[i].reverse().join(""))
+       fraseInv.push(palabraInv)
+   }
+   //console.log(fraseInv)
+   return fraseInv.join(" ")
 }
 
 function capicua(numero) {
    // Si el número que recibes es capicúa debes retornar el string: "Es capicua".
    // Caso contrario: "No es capicua".
    // Tu código:
+   num=numero.toString().split("").reverse().join("");//.toNumber();
+   if (num==numero){
+      return "Es capicua"
+   } else {
+      return "No es capicua"
+   }
 }
 
 function deleteAbc(string) {
