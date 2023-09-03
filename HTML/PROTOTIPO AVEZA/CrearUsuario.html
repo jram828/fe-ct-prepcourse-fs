@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CRM AVEZA - Crear usuario</title> 
+        <style> h1 {height:100px; width:100%;margin:0; padding:20px; text-align: center;font-size: 120%;font-family: Arial, Helvetica, sans-serif;color:black}</style>
+        <style> img {height:60px; width:10%;margin: 0 0 0 700px; padding:0; align: center}</style>
+        <style> label {height:40px; width:10%;margin:10px 0 0 650px; padding:0; font-size: 100%;font-family: Arial, Helvetica, sans-serif;color: black}</style>
+        <style> input {height:20px; width:10%;margin: 10px 0 0 700px; padding:0}</style> 
+
+        <style> a {height:40px; width:10%;margin:0 0 0 700px; padding:0; font-size: 100%;font-family: Arial, Helvetica, sans-serif}</style>
+        <meta charset="utf-8">
+    </head>
+    
+    <body>
+        <img
+                src="LOGO AVEZA.png"
+                alt="LOGO AVEZA"
+                title="AVEZA SAS"
+            >
+        <h1>Crear usuario<br/> </h1> 
+
+        
+        <main> 
+            <form method="post">
+                <label for="nombre">Nombre(s):</label>
+                <input type="text" name="nombre" id="name">
+                <label for="apellidos">Apellido(s):</label>
+                <input type="text" name="apellidos" id="lastname">
+                <br/>
+                <label for="numerocedula">Numero de cédula:</label>
+                <input type="number" name="numerocedula" id="cedula">
+                <label for="correo">Email:</label>
+                <input type="email" name="correo" id="email">
+                <br/>
+                <label for="direccion">Dirección:</label>
+                <input type="text" name="direccion" id="address">
+                <label for="telefono">Celular:</label>
+                <input type="number" name="telefono" id="celular">
+                <br/>
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" name="ciudad" id="city">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" name="contrasena" id="password">
+                <label for="repetircontrasena">Repetir contraseña:</label>
+                <input type="password" name="repetircontrasena" id="passwordver">
+
+                <input type="submit" name="guardar" value="Guardar">
+                <br/>
+                <input type="button" name="cancelar" value="Cancelar">
+                <br/>
+                                
+            </form>   
+            
+        </main>
+    </body>
+</html>

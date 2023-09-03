@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>CRM AVEZA - Generar Documentos Legales</title> 
+       
+        <link rel="icon" href="LOGO AVEZA.png"/>
+        <meta charset="utf-8">
+    </head>
+    
+    <body>
+        <img
+                src="LOGO AVEZA.png"
+                alt="LOGO AVEZA"
+                title="AVEZA SAS"
+            >
+        <h1>Generar documentos legales<br/> </h1> 
+
+        
+        <main> 
+            <nav>
+                <ul>
+                    <li><a href="Menu.html">Inicio</a></li>
+                   <li><a href="registro-de-cliente.html">Registro de cliente</a></li>
+                  <li><a href="cotizacion.html">Cotización</a></li>
+                  <li><a href="#">Financiamiento</a></li>
+                  <li><a href="generar-contrato.html">Contrato</a></li>
+                  <li><a href="agendar-cita.html">Agendar citas</a></li>
+                  <li><a href="GenerarDocumentosLegales.html">Generar documentos legales</a></li>
+                  <li><a href="configurar-recordatorio.html">Configurar recordatorios</a></li>
+                  <li><a href="#">Conocimiento de Litigios</a>
+                    <ul>
+                        <li><a href="#">Por Cliente</a></li>
+                        <li><a href="#">Por Tipo de Caso</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Generar Factura</a></li>
+                  <li><a href="#">Cerrar Sesión</a></li>
+                </ul>
+              </nav>
+              <h1>Documentos a generar</h1>
+              <label class="documentos">Poder
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+              </label>
+              <label class="documentos">Demanda
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+              </label>
+              <label class="documentos">Autorización
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+              </label>
+              <label class="documentos">Oficio
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+              </label>
+              <label class="documentos">Impulso procesal
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+              </label>
+              <label class="documentos">Sucesiones
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+              </label>
+
+              <h1>Enviar a:</h1>
+                    <label class="medioenvio">Email
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark2"></span>
+                    </label>
+                    
+                    <label class="medioenvio">SMS
+                        <input type="checkbox">
+                        <span class="checkmark2"></span>
+                    </label>
+
+                <input type="button" name="verificardatos" value="Verificar datos del cliente">
+                <br/>
+                <br/>
+                <input type="button" name="Vistaprevia" value="Vista previa del documento">
+                <br/>
+                <br/>
+                <input type="submit" name="generar" value="Generar y guardar">
+                <br/>
+                <br/>
+                
+        </main>
+    </body>
+</html>
