@@ -9,10 +9,10 @@
   </head>
   <body>
     <div class="logo-aveza">
-      <img src="LOGO AVEZA.png" alt="logo-aveza" class="logo-aveza" />
-      <br />
-      <h1>Registro De Cliente</h1>
+      <img src="LOGO AVEZA.png" alt="logo-aveza"/>
+      
     </div>
+    <h1 class="titulo">Registro De Cliente</h1>
     <nav class="menu-principal">
       <ul>
         <li><a href="Menu.html">Inicio</a></li>
@@ -39,51 +39,48 @@
       </ul>
     </nav>
     <br /><br />
-    <article class="datos">
-      <input type="text" name="nombre" id="nombre" /> <br />
-      <label for="nombre">escriba el nombre</label>
-      <br />
-      <br />
-      <input type="text" name="apellido" id="apellido" /> <br />
-      <label for="apellido">escriba el apellido</label>
-      <br />
-      <br />
-      <input type="text" name="cedula" id="cedula" /> <br />
-      <label for="cedula">numero de identificacion</label>
-      <br />
-      <br />
-      <input type="email" name="email" id="email" /> <br />
-      <label for="email">escriba el email</label>
-      <br />
-      <br />
-      <input type="tel" name="telefono" id="telefono" /> <br />
-      <label for="telefono">numero de telefono</label>
-      <br />
-      <br />
-      <input type="text" name="direccion" id="nombre" /> <br />
-      <label for="direccion">escriba la direccion</label>
-      <br />
-      <br />
-    </article>
+    <form class="datos">
+      <label for="nombre" class="labelcrearusuario">Nombre(s):</label>
+                <input type="text" name="nombre" id="name" class="cajanombre">
+                <label for="apellidos" class="labelcrearusuario2">Apellido(s):</label>
+                <input type="text" name="apellidos" id="lastname">
+                <br/>
+                <br/>
+                <label for="numerocedula" class="labelcrearusuario">Numero de cédula:</label>
+                <input type="number" name="numerocedula" id="cedula">
+                <label for="correo" class="labelcrearusuario2">Email:</label>
+                <input type="email" name="correo" id="email" class="cajaemail">
+                <br/>
+                <br/>
+                <label for="direccion" class="labelcrearusuario">Dirección:</label>
+                <input type="text" name="direccion" id="address" class="cajadireccion">
+                <label for="telefono" class="labelcrearusuario2">Celular:</label>
+                <input type="number" name="telefono" id="celular" class="cajacelular">
+                <br/>
+                <br/>
+                <label for="ciudad" class="labelcrearusuario">Ciudad:</label>
+                <input type="text" name="ciudad" id="city" class="cajaciudad">
+    </form>
     <br /><br />
     <div class="tipo-de-caso">
       <label for="tIpo-de-caso">Tipo de caso</label> <br />
       <select name="tIpo-de-caso" id="casos">
-        <option value="">eliga una opcion</option>
+        <option value="">Elija una opcion</option>
         <option value="insolvencia">Insolvencia</option>
         <option value="divorcio">Divorcio</option>
-        <option value="proteccion-de-patrimonio">
-          Proteccion de patrimonio
+        <option value="proteccion-de-patrimonio"> Protección de patrimonio
         </option>
         <option value="derecho-laboral">Derecho laboral</option>
         <option value="DCRGE">
-          Derecho corporativo y recaudo y gestion de contratacion estatal
+          Derecho corporativo y recaudo y gestion de contratación estatal
         </option>
       </select>
     </div>
     <br /><br />
     <div class="comentarios">
-      <label for="comentarios">comentarios</label> <br />
+      <label for="comentarios">Comentarios</label> 
+      <br />
+      <br/>
       <textarea
         name="comentarios"
         id="comentarios"
@@ -91,6 +88,7 @@
         rows="5"
       ></textarea>
     </div>
+    <br/>
     <div class="verificacion">
       <input type="button" value="Modificar" />
       <input type="button" value="Guardar" />

@@ -1,9 +1,10 @@
 .logo-aveza {
-  text-align: center;
+  height:60px; width:10%;margin: 0 0 0 0; padding:0
 }
-.datos {
+
+/* .datos {
   text-align: center;
-}
+} */
 .verificacion {
   text-align: center;
 }
@@ -11,15 +12,56 @@
 /* registro de cliente */
 .comentarios {
   text-align: center;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black
 }
 .tipo-de-caso {
   text-align: center;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black
+}
+
+.botondoclegales {
+  margin: 0 0 0 400px;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black
+}
+
+.botondoclegales2 {
+  margin: 0 0 0 50px;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black
+}
+
+.botondoclegales3 {
+  margin: 0 0 0 500px;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black
+}
+
+.olvidocontraseña {
+  margin:0 0 0 780px;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: blue
+}
+
+.botoncrearusuario {
+  margin:0 0 0 800px;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black
 }
 
 /* agendar cita */
-.fecha-y-hora {
+/* .fecha-y-hora {
   text-align: center;
-}
+} */
 .tipo-de-cita {
   text-align: center;
 }
@@ -32,169 +74,49 @@
   text-align: center;
 }
 
-<style> h1 {height:100px; width:100%;margin:0; padding:20px; text-align: center;font-size: 120%;font-family: Arial, Helvetica, sans-serif;color:black}</style>
-<style> img {height:60px; width:10%;margin: 0 0 0 700px; padding:0}</style>
-<style> label {height:40px; width:10%;margin:10px 0 0 650px; padding:0; font-size: 100%;font-family: Arial, Helvetica, sans-serif;color: black}</style>
-<style> input {height:40px; width:15%;margin: 10px 0 0 700px; padding:0}</style>
-
-
-<style> nav {
-    padding: 1em;
-    font-family: Arial, Helvetica, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-            
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background: rgb(78, 120, 244);
-    display: flex;
-    justify-content: center;
-  }
-  
-nav li a {
-    color: rgb(235, 224, 224);
-    display: block;
-    text-decoration: none;
-    padding: .5em 1em;
-  }
-  
-nav li a:hover {
-    background: rgb(116, 114, 196);
-    color: rgb(235, 224, 224);
-  }
-  
-  
-
-    /* Documentos legales */
-    .documentos {
-      display: block;
-      position: relative;
-      padding-left: 35px;
-      margin-bottom: 12px;
-      cursor: pointer;
-      font-size: 22px;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-    
-    /* Hide the browser's default radio button */
-    .documentos input {
-      position: absolute;
-      opacity: 0;
-      cursor: pointer;
-    }
-    
-    /* Create a custom radio button */
-    .checkmark {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 25px;
-      width: 25px;
-      background-color: #eee;
-      border-radius: 50%;
-    }
-    
-    /* On mouse-over, add a grey background color */
-    .documentos:hover input ~ .checkmark {
-      background-color: #ccc;
-    }
-    
-    /* When the radio button is checked, add a blue background */
-    .documentos input:checked ~ .checkmark {
-      background-color: #2196F3;
-    }
-    
-    /* Create the indicator (the dot/circle - hidden when not checked) */
-    .checkmark:after {
-      content: "";
-      position: absolute;
-      display: none;
-    }
-    
-    /* Show the indicator (dot/circle) when checked */
-    .documentos input:checked ~ .checkmark:after {
-      display: block;
-    }
-    
-    /* Style the indicator (dot/circle) */
-    .documentos .checkmark:after {
-         top: 9px;
-        left: 9px;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background: white;
-    }
-
-.medioenvio {
-display: block;
-position: relative;
-padding-left: 35px;
-margin-bottom: 12px;
-cursor: pointer;
-font-size: 22px;
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
+/*menu principal  */
+.menu-principal {
+  padding: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Hide the browser's default checkbox */
-.medioenvio input {
-position: absolute;
-opacity: 0;
-cursor: pointer;
-height: 0;
-width: 0;
+.menu-principal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: rgb(78, 120, 244);
+  display: flex;
+  justify-content: center;
 }
 
-/* Create a custom checkbox */
-.checkmark2 {
-position: absolute;
-top: 0;
-left: 0;
-height: 25px;
-width: 25px;
-background-color: #eee;
+.menu-principal li a {
+  color: rgb(235, 224, 224);
+  display: block;
+  text-decoration: none;
+  padding: 0.5em 1em;
 }
 
-/* On mouse-over, add a grey background color */
-.medioenvio:hover input ~ .checkmark2 {
-background-color: #ccc;
+.menu-principal li a:hover {
+  background: rgb(116, 114, 196);
+  color: rgb(235, 224, 224);
 }
 
-/* When the checkbox is checked, add a blue background */
-.medioenvio input:checked ~ .checkmark2 {
-background-color: #2196F3;
-}
+.titulo {height:20px; width:100%;margin:0; padding:0; text-align: center;font-size: 180%;font-family: Arial, Helvetica, sans-serif;color:black}
 
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark2:after {
-content: "";
-position: absolute;
-display: none;
-}
-
-/* Show the checkmark when checked */
-.medioenvio input:checked ~ .checkmark2:after {
-display: block;
-}
-
-/* Style the checkmark/indicator */
-.medioenvio .checkmark2:after {
-left: 9px;
-top: 5px;
-width: 5px;
-height: 10px;
-border: solid white;
-border-width: 0 3px 3px 0;
--webkit-transform: rotate(45deg);
--ms-transform: rotate(45deg);
-transform: rotate(45deg);
-}
+.labelcrearusuario {height:20px; width:10%;margin:0 0 0 400px; padding:0; font-size: 100%;font-family: Arial, Helvetica, sans-serif;color: black}
+.cajanombre {height:20px; width:10%;margin: 0 0 0 55px; padding:0}
+.labelcrearusuario2 {height:20px; width:10%;margin:0 0 0 80px; font-size: 100%;font-family: Arial, Helvetica, sans-serif;color: black}
+.cajaemail {height:20px; width:10%;margin: 0 0 0 70px; padding:0}
+.cajaapellido {height:20px; width:10%;margin: 0 0 0 50px; padding:0}
+.cajahonorarios {height:20px; width:10%;margin: 0 0 0 15px; padding:0}
+.cajadireccion {height:20px; width:10%;margin: 0 0 0 65px; padding:0}
+.cajacelular {height:20px; width:10%;margin: 0 0 0 75px; padding:0}
+.cajaciudad {height:20px; width:10%;margin: 0 0 0 80px; padding:0}
+.botoncancelar {height:20px; width:10%;margin:0 0 0 300px; font-size: 100%;font-family: Arial, Helvetica, sans-serif;color: black}
+.escogeraviso {font-size: 100%;font-family: Arial, Helvetica, sans-serif;color: black} 
+.labelcontraseña{height:25px; width:10%; margin:0 0 0 650px; font-size: 100%;font-family: Arial, Helvetica, sans-serif;color: black}
+.titulo2 {height:20px; width:100%;margin:0; padding:0; text-align: center;font-size: 100%;font-family: Arial, Helvetica, sans-serif;color:black}
+.labeltipousuario {height:20px; width:10%;margin:0 0 0 700px; padding:0; font-size: 100%;font-family: Arial, Helvetica, sans-serif;color: black}
+.medioenvio{font-size: 100%;font-family: Arial, Helvetica, sans-serif;color: black}

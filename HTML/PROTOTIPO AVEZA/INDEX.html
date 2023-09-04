@@ -2,62 +2,56 @@
 <html>
     <head>
         <title>CRM AVEZA - Inicio de Sesión</title> 
-        <style> h1 {height:100px; width:100%;margin:0; padding:20px; text-align: center;font-size: 120%;font-family: Arial, Helvetica, sans-serif;color:black}</style>
-        <style> img {height:60px; width:10%;margin: 0 0 0 700px; padding:0}</style>
-        <style> label {height:40px; width:10%;margin:10px 0 0 650px; padding:0; font-size: 100%;font-family: Arial, Helvetica, sans-serif;color: black}</style>
-        <style> input {height:20px; width:10%;margin: 10px 0 0 700px; padding:0}</style>        
-
-        <style> a {height:40px; width:10%;margin:0 0 0 700px; padding:0; font-size: 100%;font-family: Arial, Helvetica, sans-serif}</style>
+        <link rel="icon" href="LOGO AVEZA.png" />
+        <link rel="stylesheet" href="style css/style.css" />
+        
         <meta charset="utf-8">
     </head>
     
     <body>
         <header>
-            <div>
-                <img
-                     src="LOGO AVEZA.png"
-                     alt="LOGO AVEZA"
-                    title="AVEZA SAS"
-                >
-                <h1>Inicio de Sesión<br/> </h1> 
+            <div class="logo-aveza">
+                <img src="LOGO AVEZA.png" alt="logo-aveza" title="AVEZA SAS" />
+                
             </div>
+            <h1 class="titulo">Inicio de Sesión</h1> 
         </header>
         
         <main> 
             <form method="post">
-                <label for="usuario">Usuario:</label>
-                <input type="number" name="usuario" id="username">
-                <br/>
-                <label for="contrasena">Contraseña:</label>
-                <input type="password" name="contrasena" id="password">
                 <br/>
                 <br/>
-                <div class="radio">
-                    <style> h2 {height:100px; width:100%;margin:0; padding:0; text-align: center;font-size: 100%;font-family: Arial, Helvetica, sans-serif;color:black}</style>
-
-                    <h2>Tipo de Usuario</h2>
-    
-                    <input type="radio" name="tipousuario" id="administrador">
-                    <label for="administrador">Administrador</label>
-            
-                    <input type="radio" name="tipousuario" id="cliente">
-                    <label for="cliente">Cliente</label>
-                </div>
+                <label for="usuario" class="labelcontraseña" >Usuario:</label>
+                <input type="number" name="usuario" id="username" class="labelcrearusuario2">
                 <br/>
                 <br/>
-                <input type="submit" name="ingresar" value="Ingresar">
+                <label for="contraseña"class="labelcontraseña">Contraseña:</label>
+                <input type="text" name="contraseña" id="password" class="cajanombre">
                 <br/>
                 <br/>
-                <input type="button" name="cancelar" value="Cancelar">
+                <div class="tipodeusuario">
+                    <br/>
+                    <label for="tipodeusuario" class="labeltipousuario">Tipo de usuario:   </label>
+                    <select name="tipodeusuario" id="idusuario">
+                      <option value="">Elija una opcion</option>
+                      <option value="Administrador">Administrador</option>
+                      <option value="Cliente">Cliente</option>
+                 
+                    </select>
+                  </div>
                 <br/>
                 <br/>
-                <input type="button" name="crearusuario" value="Crear usuario">
+                <input type="submit" name="Ingresar" value="Ingresar" class="labelcontraseña">
+                <input type="button" name="cancelar" value="Cancelar" class="labelcrearusuario2">
+                <br/>
+                <br/>
+                <input type="button" name="crearusuario" value="Crear usuario" class="botoncrearusuario">
                 <br/>
                 <br/>
                 
             </form>   
             
-            <a href="recordar contraseña.html">¿Olvidó su contraseña?</a>
+            <a href="recordar contraseña.html" class="olvidocontraseña">¿Olvidó su contraseña?</a>
         </main>
     </body>
 </html>
